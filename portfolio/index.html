@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADITYA | PORTFOLIO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav id="navbar">
+    <h1>ADITYA<span>.</span></h1>
+    <div class="menu">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+    <button onclick="window.open('Aditya_Kanifnath_Mulay_Resume.pdf', '_blank')">HIRE ME</button>
+</nav>
+
+<section class="hero-section" id="home">
+    <div class="hero">
+        <div class="hero-left">
+            <h2>👋 Hello, I'm</h2>
+            <h1>ADITYA MULAY</h1>
+            <p class="role">a <span>Web Developer</span></p>
+            <p class="bio">I build clean, responsive, and user-friendly websites. Passionate about turning ideas into reality through code and creativity.</p>
+            <div class="view">
+                <button class="btn-dark" onclick="document.getElementById('portfolio').scrollIntoView({behavior:'smooth'})">View My Work</button>
+                <button class="btn-outline" onclick="scrollToContact()">Contact Me</button>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="photo-circle">
+                <img src="https://i.pinimg.com/736x/de/a6/06/dea606434140fd42e5fdaf56a16d1013.jpg" alt="avatar">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="pageleft">
+        <div class="who">
+            <h3>— About Me</h3>
+            <h2 class="iam">Who I Am</h2>
+            <p class="para">Hi! I'm Aditya, a passionate web developer based in India. I specialize in building modern, responsive websites that deliver great user experiences.</p>
+            <p class="para">I love clean code, thoughtful design, and solving real problems. When I'm not coding, you'll find me reading tech blogs or exploring new tools.</p>
+        </div>
+
+        <div class="name">
+            <div>
+                <span class="label">NAME</span>
+                <strong>Aditya Mulay</strong>
+            </div>
+            <div>
+                <span class="label">EMAIL</span>
+                <strong>adityamulay727@gmail.com</strong>
+            </div>
+            <div>
+                <span class="label">LOCATION</span>
+                <strong>Chennai, India</strong>
+            </div>
+            <div>
+                <span class="label">AVAILABLE</span>
+                <strong>Freelance ✓</strong>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="section-tag"><span>— </span>My Work</div>
+    <div class="section-title">Recent Projects</div>
+    <p class="section-sub">A selection of projects I've built. Each one taught me something new.</p>
+    <div class="projects-grid">
+        <div class="project-card" onclick="window.open('https://github.com/AdityaMulay727', '_blank')">
+            <div class="project-thumb" style="background:#fef3e2;">🛒</div>
+            <div class="project-info">
+                <h3>E-Commerce Website</h3>
+                <p>A fully responsive online store with product listings and cart functionality.</p>
+                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+            </div>
+        </div>
+        <div class="project-card" onclick="window.open('https://github.com/AdityaMulay727', '_blank')">
+            <div class="project-thumb" style="background:#e8f4fd;">📝</div>
+            <div class="project-info">
+                <h3>Blog Platform</h3>
+                <p>A clean blog website with article pages, categories, and a modern layout.</p>
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+        </div>
+        <div class="project-card" onclick="window.open('https://github.com/AdityaMulay727', '_blank')">
+            <div class="project-thumb" style="background:#f0fae8;">🌤️</div>
+            <div class="project-info">
+                <h3>Weather App</h3>
+                <p>A weather dashboard showing current conditions and forecasts using an API.</p>
+                <span class="tag">JavaScript</span><span class="tag">API</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-left">
+        <h4 class="touch">— Get In Touch</h4>
+        <h2 class="me">Contact Me 📞</h2>
+        <p class="word">Have a project in mind or just want to say hi? Feel free to reach out!</p>
+
+        <div class="details">
+            <div>
+                <span class="loyal">EMAIL 📧</span>
+                <strong>adityamulay727@gmail.com</strong>
+            </div>
+            <div>
+                <span class="loyal">PHONE 📞</span>
+                <strong>+91 8825431911</strong>
+            </div>
+            <div>
+                <span class="loyal">LOCATION 📍</span>
+                <strong>Chennai, India</strong>
+            </div>
+            <div>
+                <span class="loyal">LinkedIn 💼</span>
+                <strong>linkedin.com/in/aditya-kanifnath-mulay</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-right">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <input type="text" placeholder="Subject">
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message 📧</button>
+    </div>
+</section>
+
+<footer>
+    <p>Made with ❤️ by <span>Aditya Mulay</span> · 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

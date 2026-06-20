@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #D5FF40;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    padding: 30px 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part2 {
+    display: flex;
+    gap: 80px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    letter-spacing: 3px;        /* letters spread out */
+    opacity: 0.6;
+}
+
+nav h2:hover{
+    transform:scale(1.2)
+}
+
+
+section {
+    padding: 0 30px 30px 30px;
+    padding-top:80px;
+    padding-left:5px;
+}
+
+/* RED BAND */
+.heroclass1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* DIGITIZE text */
+.digitize {
+    font-size: 170px;
+    color: black;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* Pill shape */
+.video {
+    height: 100px;
+    width: 350px;  
+    background-color: black;
+    border-radius: 45px;
+    flex-shrink: 0;/*— prevents the pill from shrinking if screen is small*/
+    align-self: flex-start;
+    background-image:url(https://i.pinimg.com/1200x/da/1e/b4/da1eb44239a4152157e8e8666295497b.jpg);
+    background-size:cover; /*or contain use karege toh repeat hoga*/
+    background-position: 25px center;
+    margin-top:20px;
+    margin-left:50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.play {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;      /* change 50px to 50% */
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border:3px solid white;
+    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+.play i{
+    color:black;
+    font-size:50px;
+}
+.herotext2{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.herotext2 h1{
+    font-size:175px;
+    font-weight:900px;
+    color:black;
+    line-height:0.5em;
+}
+
+.herotext2 p{
+    font-size:30px;
+    font-weight:300px;
+    font-family:cursive;
+    color:black;
+    padding-right:0px; 
+    /*opactity:0.6;opacity controls how transparent or visible an element is.opacity controls how transparent or visible an element is.*/
+}
+.badges{
+    height:30px;
+    width:60%;
+    margin-top:70px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    gap:40px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid black;
+    border-radius: 45px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.badge:hover{
+    background-color: black;
+    color: #D5FF40;            
+    transform: scale(1.08);  /*glowing  */
+}
+
+.image{
+    height:700px;
+    width:90%;
+    max-width:1400px;
+    background-image: url(https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1400&auto=format&fit=crop);
+    background-position:center;
+    margin:100px auto 0;
+    border-radius:40px 40px 0 0;
+    background-size:cover;
+    background-position:center;
+    position:relative;
+}
+
+
+.arrow{
+    position:absolute;
+    top:-40px;
+    right:60px;
+
+    width:120px;
+    height:120px;
+
+    background:#111;
+    color:yellow;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:60px;
+}
+
+.discuss {
+    width: 100%;
+    background-color: black;
+    color: yellow;
+    padding: 45px 72px;   /* remove height, use padding only */
+    font-size: 45px;
+    font-family:gilroy, sans-serif;
+}
+
+.services {
+    background-color: #111;
+    color: white;
+    padding: 80px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.services-left {
+    flex: 1;
+}
+
+.services-title {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.dot {
+    color: #D5FF40;
+}
+
+.services-desc {
+    font-size: 16px;
+    color: #aaa;
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.services-line {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 0;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    font-size: 22px;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    color: white;
+    padding-left: 10px;
+}
+
+.service-item i {
+    font-size: 28px;
+}
+
+/* RIGHT SIDE TAGS */
+.services-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.service-tag {
+    border: 1.5px solid #444;
+    border-radius: 45px;
+    padding: 14px 24px;
+    font-size: 16px;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-tag:hover {
+    border-color: #D5FF40;
+    color: #D5FF40;
+}
+
+.service-tag.active {
+    background-color: #D5FF40;
+    color: black;
+    border-color: #D5FF40;
+}
